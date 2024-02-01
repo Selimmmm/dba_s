@@ -54,7 +54,8 @@
 
 
         ```
-- À la racine du repository, créer un fichier  `requirements.txt` : 
+- À la racine du repository, créer un fichier  `requirements.txt` : (on utilise `pip show <library>` avec l'environnement virtuel d'activé.)
+
     ```
     dnspython==2.4.2
     ipykernel==6.26.0
@@ -79,7 +80,7 @@ projet_note
 
 ### SQL
 
-- Tous les notebooks utilisant une connexion à SQL (locale) doivent contenir (dans la **première cellule**): 
+- Connexion à SQL (Locale) : 
 
     ```python
     import os
@@ -98,7 +99,7 @@ projet_note
     ```
 
 
-- Tous les notebooks utilisant une connexion à SQL (Scalingo) doivent contenir (dans la **première cellule**): 
+- Connexion à SQL (Scalingo) : 
 
     ```python
     import os
@@ -131,7 +132,8 @@ projet_note
 
 ### MongoDB
 
-- Tous les notebooks utilisant une connexion à MongoDB (toujours locale) doivent contenir (dans la **première cellule**): 
+- Connexion à MongoDB (locale) : 
+
 
     ```python
     import os
