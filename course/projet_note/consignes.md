@@ -176,7 +176,7 @@ Créer un trigger `trigger_update_session_count` afin d'avoir une ligne par util
 Créer une table `username_history` et un trigger `trigger_update_username` :
 - le trigger doit permettre de conserver l'historique des valeurs de `usernames` (On écrira dans la table `username_history` uniquement via le trigger)
 - la table `username_history` contient les colonnes : `username_history_id`, `user_id`,`username_new`
-- insérer un `username` avec une clause INSERT ou le modifier  avec une clause UPDATE dans la table `users` doit déclencher le trigger qui écrira les valeurs adéquates dans la table `username_history`
+- insérer un `username` avec une clause INSERT ou le modifier  avec une clause UPDATE dans la table `user_table` doit déclencher le trigger qui écrira les valeurs adéquates dans la table `username_history`
 - tester le trigger avec 5 clauses INSERT et 5 clauses UPDATE sur des utilisateurs différents
 - utiliser une clause SELECT sur `username_history` pour vérifier
 
